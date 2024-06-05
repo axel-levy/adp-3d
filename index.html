@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="ADP-3D Webpage">
+  <meta property="og:title" content="ADP-3D"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+<!--  <meta property="og:image" content="static/images/melon_emoji.png" />-->
+<!--  <meta property="og:image:width" content="1200"/>-->
+<!--  <meta property="og:image:height" content="630"/>-->
+
+
+<!--  <meta name="twitter:title" content="MELON">-->
+<!--  <meta name="twitter:description" content="NeRF with Unposed Images">-->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+<!--  <meta name="twitter:image" content="static/images/melon_emoji.png">-->
+<!--  <meta name="twitter:card" content="summary_large_image">-->
+  <!-- Keywords for your paper to be indexed by-->
+<!--  <meta name="keywords" content="Unposed Inverse Rendering">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>ADP-3D</title>
+<!--  <link rel="icon" type="image/x-icon" href="static/images/melon_emoji.png">-->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero is-black">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Solving Inverse Problems in Protein Space Using Diffusion-Based Priors</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://axlevy.com/" target="">Axel Levy</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://research.google/people/107709/" target="">Eric R. Chan</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=LAawSpwAAAAJ&hl=th" target="">Sara Fridovich-Keil</a><sup>1</sup>,</span>
+                    <span class="author-block">
+                      <a href="https://www.computationalimaging.org/" target="">Frédéric Poitevin</a><sup>2</sup>,</span>
+                      <span class="author-block">
+                        <a href="https://scholar.google.com/citations?user=sY8lt7AAAAAJ&hl=en" target="">Ellen D. Zhong</a><sup>3</sup>,</span>
+                        <span class="author-block">
+                          <a href="https://scholar.google.com/citations?user=sY8lt7AAAAAJ&hl=en" target="">Gordon Wetzstein</a><sup>1</sup></span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">1: Stanford University - 2: SLAC National Laboratory - 3: Princeton University</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2303.08096.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+<!--                    <span class="link-block">-->
+<!--                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"-->
+<!--                      class="external-link button is-normal is-rounded is-dark">-->
+<!--                      <span class="icon">-->
+<!--                        <i class="fas fa-file-pdf"></i>-->
+<!--                      </span>-->
+<!--                      <span>Supplementary</span>-->
+<!--                    </a>-->
+<!--                  </span>-->
+
+                  <!-- Github link -->
+<!--                  <span class="link-block">-->
+<!--                    <a href="https://github.com/YOUR REPO HERE" target="_blank"-->
+<!--                    class="external-link button is-normal is-rounded is-dark">-->
+<!--                    <span class="icon">-->
+<!--                      <i class="fab fa-github"></i>-->
+<!--                    </span>-->
+<!--                    <span>Code</span>-->
+<!--                  </a>-->
+<!--                </span>-->
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2303.08096" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero  is-black teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/teaser.mp4"
+        type="video/mp4">
+      </video>
+<!--      <h2 class="subtitle has-text-centered">-->
+<!--        Convergence of MELON on "lego" scene from unposed images.<br>-->
+<!--        <b>Left</b> - Novel views throughout optimization.<br>-->
+<!--        <b>Right</b> - Predicted view directions (projected azimuth/elevation).-->
+<!--      </h2>-->
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-dark">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The interaction of a protein with its environment can be understood and controlled via its 3D structure.
+            Experimental methods for protein structure determination, such as X-ray crystallography or cryogenic electron microscopy, shed light on biological processes but introduce challenging inverse problems.
+            Learning-based approaches have emerged as accurate and efficient methods to solve these inverse problems for 3D structure determination, but are specialized for a predefined type of measurement.
+            Here, we introduce a versatile framework to turn raw biophysical measurements of varying types into 3D atomic models.
+            Our method combines a physics-based forward model of the measurement process with a pretrained generative model providing a task-agnostic, data-driven prior.
+            Our method outperforms posterior sampling baselines on both linear and non-linear inverse problems.
+            In particular, it is the first diffusion-based method for refining atomic models from cryo-EM density maps.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!--<section class="hero is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <div class="item">-->
+<!--        <img src="static/images/teaser.png" alt="teaser" class="center">-->
+<!--        <div class="content has-text-justified">-->
+<!--          <p>-->
+<!--          MELON infers a neural radiance field from an object-centered dataset. A dataset-specific encoder maps each image to a predicted pose R. Given an equivalence relation in camera space, we render rays from all the poses in the equivalence class [R]. The modulo loss only penalizes the smallest L2 distance from the ground truth color. At evaluation time, the neural field can be used to generate novel views.-->
+<!--        </p>-->
+<!--  </div>-->
+<!--  </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<section class="section hero is-black">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Methods</h2>
+        <img src="static/images/teaser.png" alt="teaser" class="center">
+        <div class="content has-text-justified">
+          MELON simultaneously trains a CNN encoder that maps images to camera pose in SO(3), and a neural radiance field of the scene.
+          It does not require CNN pre-training, and is able to infer camera pose in object centered configurations entirely "ab-initio", without any pose initialization whatsoever.
+          To cope with the presence of local minima in the low-dimensional latent space SO(3), we introduce a novel <i>modulo loss</i> that replicates the encoder pose output and only backpropagates the view with the lowest photometric error.
+        </div>
+
+<!--        <div class="content has-text-justified">-->
+<!--            MELON infers a neural radiance field from an object-centered dataset. A dataset-specific encoder maps each image to a predicted pose R. Given an equivalence relation in camera space, we render rays from all the poses in the equivalence class [R]. The modulo loss only penalizes the smallest L2 distance from the ground truth color. At evaluation time, the neural field can be used to generate novel views.-->
+<!--        </div>-->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--<section class="hero is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <div id="results-carousel" class="carousel results-carousel">-->
+<!--        <div class="item">-->
+<!--            &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--            <img src="static/images/carousel1.jpg" alt="Lego scene" class="center"/>-->
+<!--        </div>-->
+<!--        <div class="item">-->
+<!--            &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--            <img src="static/images/carousel2.jpg" alt="Hotdog scene" class="center"/>-->
+<!--        </div>-->
+<!--        <div class="item">-->
+<!--            &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--            <img src="static/images/carousel3.jpg" alt="Chair scene" class="center"/>-->
+<!--        </div>-->
+<!--        <div class="item">-->
+<!--            &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--            <img src="static/images/carousel4.jpg" alt="Ship scene" class="center"/>-->
+<!--        </div>-->
+<!--        <div class="item">-->
+<!--            &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--            <img src="static/images/carousel5.jpg" alt="Materials scene" class="center"/>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <h3 class="title is-4">NeRF from Unposed Images</h3>
+        <img src="static/images/ab_initio_big.png" alt="results" class="center">
+<!--        <div id="results-carousel" class="carousel results-carousel">-->
+<!--          <div class="item">-->
+<!--              &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--              <img src="static/images/carousel1.jpg" alt="LH scene" class="center"/>-->
+<!--          </div>-->
+<!--          <div class="item">-->
+<!--              &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--              <img src="static/images/carousel2.jpg" alt="CD scene" class="center"/>-->
+<!--          </div>-->
+<!--          <div class="item">-->
+<!--              &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--              <img src="static/images/carousel3.jpg" alt="MS scene" class="center"/>-->
+<!--          </div>-->
+<!--          <div class="item">-->
+<!--              &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--              <img src="static/images/carousel4.jpg" alt="MF scene" class="center"/>-->
+<!--          </div>-->
+<!--        </div>-->
+        <div class="content has-text-centered">
+          <br>MELON performs state-of-the-art novel views synthesis on synthetic datasets of unposed images.
+        </div>
+
+        <h3 class="title is-4">Reconstruction from Small Datasets</h3>
+        <img src="static/images/num_views.png" alt="results" class="center">
+        <div class="content has-text-centered">
+          <br>Contrary to adversarial approaches, our method works on datasets containing few images. "GT+NeRF" trains a NeRF with ground truth camera poses.
+        </div>
+
+        <h3 class="title is-4">Real Datasets</h3>
+        <img src="static/images/nerf_in_the_wild_small.png" alt="results" class="center">
+        <div class="content has-text-centered">
+          <br>Ab initio reconstruction on real datasets.
+          All the methods use ground truth values for the object-to-camera distances and in-plane camera translations.
+          SAMURAI* uses a fixed initialization of the poses at the North pole.
+        </div>
+
+        <h3 class="title is-4">Reconstruction from Noisy Datasets</h3>
+        <img src="static/images/noise_sweep.png" alt="results" class="center-small">
+        <div class="content has-text-centered">
+          <br>MELON is robust to high levels of noise.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">One-dimensional Toy Problem</h2>
+        <img src="static/images/method_1d_labeled.png" alt="one dimensional toy problem" class="center-small">
+        <div class="columns is-centered has-text-justified">
+            <br>We are given a set of crops from an unknown 1D function. The goal is to recover the function (and the angles) given the crops.<br><br>
+        </div>
+        <img src="static/images/torus_results_supp.png" alt="one dimensional toy results qualitative" class="center-small">
+        <div class="columns is-centered has-text-justified">
+            <br>Example of ground truth function and 1D reconstructions.<br><br>
+        </div>
+        <img src="static/images/torus_results.png" alt="one dimensional toy results quantitative" class="center">
+        <div class="columns is-centered has-text-justified">
+            <br>Angular and reconstruction error for the 1D datasets. We indicate the mean, min and max errors obtained throughout 10 experiments. The explicit representation gets stuck at an early stage. The modulo loss helps the model avoiding local minima and the encoder regularizes the angular prediction.<br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--<section class="section hero">-->
+<!--  <div class="container is-max-desktop">-->
+<!--    <div class="columns is-centered has-text-centered">-->
+<!--      <div class="column is-four-fifths">-->
+<!--        <h2 class="title is-3">Methods</h2>-->
+<!--        <div class="content has-text-justified">-->
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">RGB-MELON Dataset</h2>
+        <div class="content has-text-justified">
+        We build a pathological dataset containing centered views of 3D spheres on which we map almost-symmetric textures.
+        We use spherical harmonics to generate red--green textures that are invariant by translation along the azimuthal direction.
+        In order to break the perfect symmetry of these scenes, we add three red/green/blue squares along the azimuthal direction.
+        This dataset can be used as a minimalist but challenging example for pose estimation and inverse rendering.
+        </div>
+        <div id="wrapper">
+        <video id="home1" poster="" autoplay controls muted loop>
+        <source type="video/mp4" src="static/videos/sph_1.mp4" />
+        </video>
+        <video id="home2" poster="" autoplay controls muted loop >
+        <source type="video/mp4" src="static/videos/sph_2.mp4" />
+        </video>
+        <video id="home3" poster="" autoplay controls muted loop >
+        <source type="video/mp4" src="static/videos/sph_3.mp4" />
+        </video>
+        <video id="home4" poster="" autoplay controls muted loop >
+        <source type="video/mp4" src="static/videos/sph_4.mp4" />
+        </video>
+        <div class="clear"></div>
+        </div>
+        <div class="content has-text-centered">
+        <a href="https://drive.google.com/drive/folders/1H3cYkFshdtrnq6YY9YomEvf9MwusXYO1?usp=sharing">Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Image carousel -->
+<!--<section class="hero is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <div id="results-carousel" class="carousel results-carousel">-->
+<!--       <div class="item">-->
+<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--          First image description.-->
+<!--        </h2>-->
+<!--      </div>-->
+<!--      <div class="item">-->
+<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--          Second image description.-->
+<!--        </h2>-->
+<!--      </div>-->
+<!--      <div class="item">-->
+<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--         Third image description.-->
+<!--       </h2>-->
+<!--     </div>-->
+<!--     <div class="item">-->
+<!--      &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>-->
+<!--      <h2 class="subtitle has-text-centered">-->
+<!--        Fourth image description.-->
+<!--      </h2>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      &lt;!&ndash; Paper video. &ndash;&gt;-->
+<!--      <h2 class="title is-3">Video Presentation</h2>-->
+<!--      <div class="columns is-centered has-text-centered">-->
+<!--        <div class="column is-four-fifths">-->
+<!--          -->
+<!--          <div class="publication-video">-->
+<!--            &lt;!&ndash; Youtube embed code here &ndash;&gt;-->
+<!--            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!--<section class="hero is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h2 class="title is-3">Another Carousel</h2>-->
+<!--      <div id="results-carousel" class="carousel results-carousel">-->
+<!--        <div class="item item-video1">-->
+<!--          <video poster="" id="video1" autoplay controls muted loop height="100%">-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel1.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-video2">-->
+<!--          <video poster="" id="video2" autoplay controls muted loop height="100%">-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel2.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-video3">-->
+<!--          <video poster="" id="video3" autoplay controls muted loop height="100%">\-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel3.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h2 class="title">Poster</h2>-->
+
+<!--      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">-->
+<!--          </iframe>-->
+<!--        -->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{levy2023melon,
+  author    = {Levy, Axel and Matthews, Mark and Sela, Matan and Wetzstein, Gordon and Lagun, Dmitry},
+  title     = {{MELON}: NeRF with Unposed Images Using Equivalence Class Estimation},
+  journal   = {arXiv:preprint},
+  year      = {2023},
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
