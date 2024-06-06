@@ -1,7 +1,25 @@
-body {
-  font-family: 'Noto Sans', sans-serif;
+html {
+  background-color: #000000;
 }
 
+body {
+  font-family: 'Noto Sans', sans-serif;
+    background-color: #000000;
+}
+
+.content a:link {
+  color: hsl(204, 86%, 53%) !important;
+  text-decoration: none;
+}
+
+.content a:visited {
+  color: hsl(204, 86%, 53%) !important;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 .footer .icon-link {
     font-size: 25px;
