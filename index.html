@@ -82,7 +82,7 @@
 </section>
 
 
-<section class="hero  is-black teaser">
+<section class="hero is-black teaser">
     <div class="container is-max-desktop">
         <div class="hero-body">
             <video poster="" id="tree" autoplay controls muted loop height="100%">
@@ -92,7 +92,7 @@
     </div>
 </section>
 
-<section class="section hero is-black">
+<section class="section hero is-light">
     <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
             <div class="column is-four-fifths">
@@ -113,12 +113,12 @@
     </div>
 </section>
 
-<section class="section hero is-black">
+<section class="section hero is-light">
     <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
             <div class="column is-four-fifths">
                 <h2 class="title is-3">Methods</h2>
-                <img src="static/images/method.png" alt="teaser" class="center">
+                <img src="static/images/method_white.png" alt="teaser" class="center">
                 <div class="content has-text-justified">
                     <br>
                     <b>Overview of ADP-3D.</b> Our method turns partial and noisy measurements (the ''conditioning information'') into a
@@ -133,7 +133,7 @@
                 </div>
                 <br>
                 <br>
-                <img src="static/images/algo.png" alt="teaser" class="center">
+                <img src="static/images/algo_adp-3d_white.png" alt="teaser" class="center">
                 <div class="content has-text-justified">
                     <br>
                     <b>ADP-3D in pseudo-code.</b> Our method performs MAP estimation by taking inspiration from the plug-n-play framework [2, 3].
@@ -149,7 +149,7 @@
     </div>
 </section>
 
-<section class="section hero is-black">
+<section class="section hero is-light">
     <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
             <div class="column is-four-fifths">
@@ -159,7 +159,7 @@
                 <div class="content has-text-justified">
                     ADP-3D can refine incomplete atomic models obtained with the model building algorithm ModelAngelo [4] on synthetic cryo-EM density maps.
                 </div>
-                <img src="static/images/model_building_black.png" alt="results" class="center">
+                <img src="static/images/model_building_white.png" alt="results" class="center">
                 <div class="content has-text-justified">
                     <br>
                     <b>Left.</b>  Qualitative results on the TecA bacterial toxin (<a href="https://www.rcsb.org/structure/7PZT" target="_blank">PDB:7pzt</a>, 160 residues). We show, from left to right, the input density map at 2.0 &Aring; resolution, the incomplete
@@ -169,7 +169,7 @@
                     &alpha;-carbons over 8 replicas (&#177;1 std). The experimental (deposited) resolution is indicated with a dashed line.
                 </div>
                 <br>
-                <img src="static/images/ablation_black.png" alt="results" class="center">
+                <img src="static/images/ablation_white.png" alt="results" class="center">
                 <div class="content has-text-justified">
                     <br>
                     We analyze the importance of the different input measurements (incomplete model, density map, amino-acid sequence) and that of the generative prior.
@@ -185,7 +185,7 @@
                 <div class="content has-text-justified">
                     Given a fixed number of diffusion steps, ADP-3D outperforms posterior sampling baselines on a linear inverse problem (structure completion).
                 </div>
-                <img src="static/images/structure_completion_black.png" alt="results" class="center">
+                <img src="static/images/structure_completion_white.png" alt="results" class="center">
                 <div class="content has-text-justified">
                     <br>
                     <b>Left.</b> Qualitative results on the ATAD2 protein (<a href="https://www.rcsb.org/structure/7QUM" target="_blank">PDB:7qum</a>, 130 residues). The input structure is a subsampled version of the target structure (subsampling factor in the top row).
@@ -201,7 +201,7 @@
                 <div class="content has-text-justified">
                     ADP-3D efficiently solves non-convex inverse problems, like estimating a 3D structure from sparse pairwise distances between atoms.
                 </div>
-                <img src="static/images/distance_to_structure_black.png" alt="results" class="center">
+                <img src="static/images/distance_to_structure_white.png" alt="results" class="center">
                 <div class="content has-text-justified">
                     <br>
                     <b>Left.</b>  Qualitative results on BRD4 (<a href="https://www.rcsb.org/structure/7R5B" target="_blank">PDB:7r5b</a>, 127 residues).
@@ -219,7 +219,7 @@
     </div>
 </section>
 
-<section class="section hero is-black" id="BibTeX">
+<section class="section hero is-light" id="BibTeX">
     <div class="container is-max-desktop content">
         <h2 class="title">Citing this work</h2>
         <pre><code>@article{...
